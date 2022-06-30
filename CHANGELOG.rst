@@ -2,6 +2,15 @@
 Changelog for package example_interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.10.0 (2022-04-29)
+-------------------
+
+0.9.3 (2022-04-06)
+------------------
+* Update maintainers to Mabel Zhang (`#15 <https://github.com/ros2/example_interfaces/issues/15>`_)
+* Add changelog (`#14 <https://github.com/ros2/example_interfaces/issues/14>`_)
+* Contributors: Audrow Nash, Ivan Santiago Paunovic
+
 0.9.2 (2021-04-06)
 ------------------
 * Change links from index.ros.org -> docs.ros.org. (`#13 <https://github.com/ros2/example_interfaces/issues/13>`_)
