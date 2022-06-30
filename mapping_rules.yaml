@@ -2,6 +2,146 @@
 # It is used with the ros1_bridge to allow for communcation between ROS 1 and ROS 2.
 
 -
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'Bool'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'Bool' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'Byte'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'Byte' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'ByteMultiArray'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'ByteMultiArray' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'ByteMultiArray'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'ByteMultiArray' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'Char'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'Char' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'Empty'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'Empty' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'Float32'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'Float32' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'Float32MultiArray'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'Float32MultiArray' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'Float64'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'Float64' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'Float64MultiArray'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'Float64MultiArray' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'Int8'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'Int8' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'Int8MultiArray'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'Int8MultiArray' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'Int16'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'Int16' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'Int16MultiArray'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'Int16MultiArray' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'Int32'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'Int32' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'Int32MultiArray'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'Int32MultiArray' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'Int64'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'Int64' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'Int64MultiArray'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'Int64MultiArray' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'MultiArrayDimension'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'MultiArrayDimension' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'MultiArrayLayout'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'MultiArrayLayout' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'UInt8'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'UInt8' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'UInt8MultiArray'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'UInt8MultiArray' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'UInt16'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'UInt16' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'UInt16MultiArray'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'UInt16MultiArray' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'UInt32'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'UInt32' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'UInt32MultiArray'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'UInt32MultiArray' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'UInt64'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'UInt64' 
+-
+  ros1_package_name: 'std_msgs'
+  ros1_message_name: 'UInt64MultiArray'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'UInt64MultiArray' 
+-
   ros1_package_name: 'roscpp_tutorials'
   ros1_service_name: 'TwoInts'
   ros2_package_name: 'example_interfaces'
@@ -16,3 +156,13 @@
   ros1_service_name: 'SetBool'
   ros2_package_name: 'example_interfaces'
   ros2_service_name: 'SetBool'
+-
+  ros1_package_name: 'std_srvs'
+  ros1_service_name: 'Trigger'
+  ros2_package_name: 'example_interfaces'
+  ros2_service_name: 'Trigger'
+-
+  ros1_package_name: 'std_srvs'
+  ros1_service_name: 'Empty'
+  ros2_package_name: 'example_interfaces'
+  ros2_service_name: 'Empty'
