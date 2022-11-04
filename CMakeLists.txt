@@ -13,40 +13,33 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
+set(EXCEPTION_MSG 
+# msg here won't be built.
+)
+
+macro(subdirlist result dir type)
+  file(GLOB children "${dir}/${type}")
+  set(filelist "")
+  foreach(child ${children})
+      get_filename_component(child ${child} NAME)
+      list(FIND EXCEPTION_MSG ${child} index)
+      if(${index} EQUAL -1)
+        list(APPEND filelist "${dir}/${child}")
+      else()
+        message("${child} is not supported in ros2")
+      endif()
+  endforeach()
+  set(${result} ${filelist})
+endmacro()
+
+subdirlist(MSG_FILES "msg" "*.msg")
+subdirlist(SRV_FILES "srv" "*.srv")
+subdirlist(ACT_FILES "action" "*.action")
+
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "action/Fibonacci.action"
-  "msg/Bool.msg"
-  "msg/Byte.msg"
-  "msg/ByteMultiArray.msg"
-  "msg/Char.msg"
-  "msg/Empty.msg"
-  "msg/Float32.msg"
-  "msg/Float32MultiArray.msg"
-  "msg/Float64.msg"
-  "msg/Float64MultiArray.msg"
-  "msg/Int16.msg"
-  "msg/Int16MultiArray.msg"
-  "msg/Int32.msg"
-  "msg/Int32MultiArray.msg"
-  "msg/Int64.msg"
-  "msg/Int64MultiArray.msg"
-  "msg/Int8.msg"
-  "msg/Int8MultiArray.msg"
-  "msg/MultiArrayDimension.msg"
-  "msg/MultiArrayLayout.msg"
-  "msg/String.msg"
-  "msg/UInt16.msg"
-  "msg/UInt16MultiArray.msg"
-  "msg/UInt32.msg"
-  "msg/UInt32MultiArray.msg"
-  "msg/UInt64.msg"
-  "msg/UInt64MultiArray.msg"
-  "msg/UInt8.msg"
-  "msg/UInt8MultiArray.msg"
-  "msg/WString.msg"
-  "srv/AddTwoInts.srv"
-  "srv/SetBool.srv"
-  "srv/Trigger.srv"
+  ${MSG_FILES}
+  ${SRV_FILES}
+  ${ACT_FILES}
 )
 
 install(FILES mapping_rules.yaml DESTINATION share/${PROJECT_NAME})
