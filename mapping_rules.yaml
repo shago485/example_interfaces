@@ -103,6 +103,11 @@
   ros2_message_name: 'MultiArrayLayout' 
 -
   ros1_package_name: 'std_msgs'
+  ros1_message_name: 'String'
+  ros2_package_name: 'example_interfaces'
+  ros2_message_name: 'String'
+-
+  ros1_package_name: 'std_msgs'
   ros1_message_name: 'UInt8'
   ros2_package_name: 'example_interfaces'
   ros2_message_name: 'UInt8' 
