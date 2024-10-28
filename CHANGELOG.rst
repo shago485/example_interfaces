@@ -2,6 +2,28 @@
 Changelog for package example_interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.13.0 (2024-04-26)
+-------------------
+
+0.12.0 (2023-08-21)
+-------------------
+* Update to C++17. (`#18 <https://github.com/ros2/example_interfaces/issues/18>`_)
+* Contributors: Chris Lalancette
+
+0.11.0 (2023-04-27)
+-------------------
+
+0.10.2 (2023-02-13)
+-------------------
+* [rolling] Update maintainers - 2022-11-07 (`#17 <https://github.com/ros2/example_interfaces/issues/17>`_)
+* Contributors: Audrow Nash
+
+0.10.1 (2022-09-13)
+-------------------
+* Remove action_msgs dependency (`#16 <https://github.com/ros2/example_interfaces/issues/16>`_)
+* Mirror rolling to master
+* Contributors: Audrow Nash, Jacob Perron
+
 0.10.0 (2022-04-29)
 -------------------
 
